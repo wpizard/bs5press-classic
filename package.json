@@ -1,0 +1,22 @@
+{
+  "name": "bs5press-classic",
+  "version": "1.0.0",
+  "description": "BS5Press Classic",
+  "main": "style.css",
+  "scripts": {
+    "make-pot": "wp i18n make-pot . languages/bs5press-classic.pot --exclude=node_modules,vendor --ignore-domain=default --headers='{\"Report-Msgid-Bugs-To\":\"https://github.com/wpizard/bs5press-classic\",\"Last-Translator\":\"WPizard <wpizard@gmail.com>\",\"Language-Team\":\"WPizard <wpizard@gmail.com>\"}'",
+    "zip": "bestzip bs5press-classic.zip . -x '**/.git/**' '**/.DS_Store' 'node_modules/**' 'vendor/**' 'package.json' 'package-lock.json'",
+    "build": "npm run make-pot && npm run zip"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "bootstrap",
+    "bs5press"
+  ],
+  "author": "WPizard",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "bestzip": "^2.2.1"
+  }
+}
