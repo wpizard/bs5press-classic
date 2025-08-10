@@ -73,5 +73,4 @@ For issues or feature requests, please open an issue on the theme’s GitHub rep
 
 ## Author
 
-Reza Ardestani
-[https://yourwebsite.example](https://yourwebsite.example)
+[WPizard](https://wpizard.com)
