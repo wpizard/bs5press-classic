@@ -3,6 +3,19 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
+ * Defines theme constants.
+ *
+ * @since 1.1.0
+ */
+define( 'BS5PC_VERSION', '1.1.0' );
+define( 'BS5PC_SLUG', 'bs5pc' );
+define( 'BS5PC_DIR_PATH', get_template_directory() );
+define( 'BS5PC_INCLUDES_PATH', BS5PC_DIR_PATH . '/includes' );
+define( 'BS5PC_DIR_URI', get_template_directory_uri() );
+define( 'BS5PC_ASSETS_URI', BS5PC_DIR_URI . '/assets' );
+define( 'BS5PC_BOOTSTRAP_VERSION', '5.3.7' );
+
+/**
  * Adds theme support for menus.
  *
  * @since 1.0.0
@@ -10,43 +23,14 @@ defined( 'ABSPATH' ) || exit;
 add_theme_support( 'menus' );
 
 /**
- * Includes custom Bootstrap-compatible menu walker.
- */
-require_once get_template_directory() . '/includes/menu-walker.php';
-
-/**
- * Enqueues theme styles and scripts.
+ * Includes dependency files.
  *
  * @since 1.0.0
+ * @since 1.1.0 Added inclusion of assets.php and theme-settings.php file and used constant.
  */
-add_action( 'wp_enqueue_scripts', 'bs5pc_enqueue_scripts' );
-
-function bs5pc_enqueue_scripts() {
-    // Bootstrap CSS
-    wp_enqueue_style(
-        'bs5pc-bootstrap',
-        'https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css',
-        [],
-        '5.3.7'
-    );
-
-    // Main stylesheet (style.css)
-    wp_enqueue_style(
-        'bs5pc-style',
-        get_stylesheet_uri(),
-        [],
-        wp_get_theme()->get( 'Version' )
-    );
-
-    // Bootstrap JS Bundle (includes Popper)
-    wp_enqueue_script(
-        'bs5pc-bootstrap',
-        'https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js',
-        [],
-        '5.3.7',
-        true
-    );
-}
+require_once BS5PC_INCLUDES_PATH . '/assets.php';
+require_once BS5PC_INCLUDES_PATH . '/menu-walker.php';
+require_once BS5PC_INCLUDES_PATH . '/theme-settings.php';
 
 /**
  * Loads single page template part on custom action 'bs5pc/single'.
@@ -96,17 +80,4 @@ add_action( 'bs5pc/site_footer', 'bs5pc_add_footer' );
 
 function bs5pc_add_footer() {
     get_template_part( 'template-parts/footer-credits' );
-}
-
-/**
- * Register theme menu locations.
- *
- * @since 1.0.0
- */
-add_action( 'after_setup_theme', 'bs5pc_register_menus' );
-
-function bs5pc_register_menus() {
-    register_nav_menus( [
-        'primary' => __( 'Primary Menu', 'bs5pc' ),
-    ] );
 }
