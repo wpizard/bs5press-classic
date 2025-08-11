@@ -12,8 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add theme constant.
 - Add Assets management class.
 - Add Theme Settings.
--
-## Changed
+
+### Changed
 
 - Add missing data in the theme stylesheet file.
 
