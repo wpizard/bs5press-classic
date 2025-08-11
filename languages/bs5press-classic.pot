@@ -1,15 +1,15 @@
-# Copyright (C) 2025 
+# Copyright (C) 2025 WPizard
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: BS5Press Classic 1.0.0\n"
+"Project-Id-Version: BS5Press Classic 1.1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/wpizard/bs5press-classic\n"
 "Last-Translator: WPizard <wpizard@gmail.com>\n"
 "Language-Team: WPizard <wpizard@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-08-10T15:17:16+00:00\n"
+"POT-Creation-Date: 2025-08-11T05:53:44+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
@@ -21,6 +21,16 @@ msgstr ""
 #. Description of the theme
 #: style.css
 msgid "The Developer-Friendly Bootstrap 5 WordPress Classic Theme"
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "WPizard"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://wpizard.com"
 msgstr ""
 
 #: comments.php:28
@@ -55,8 +65,30 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: functions.php:110
-msgid "Primary Menu"
+#: includes/theme-settings.php:62
+#: includes/theme-settings.php:63
+#: includes/theme-settings.php:173
+msgid "Theme Settings"
+msgstr ""
+
+#: includes/theme-settings.php:85
+msgid "Assets"
+msgstr ""
+
+#: includes/theme-settings.php:93
+msgid "Bootstrap CSS and JavaScript"
+msgstr ""
+
+#: includes/theme-settings.php:125
+msgid "Adjust the theme assets settings."
+msgstr ""
+
+#: includes/theme-settings.php:139
+msgid "Load from CDN"
+msgstr ""
+
+#: includes/theme-settings.php:140
+msgid "Load from Theme (single bundle)"
 msgstr ""
 
 #: index.php:44
