@@ -72,6 +72,28 @@ function bs5pc_add_navbar_menu() {
 }
 
 /**
+ * Loads page canvas template part.
+ *
+ * @since 1.2.0
+ */
+add_action( 'bs5pc/page/canvas', 'bs5pc_add_page_canvas' );
+
+function bs5pc_add_page_canvas() {
+    get_template_part( 'template-parts/page-canvas' );
+}
+
+/**
+ * Loads page fullwidth template part.
+ *
+ * @since 1.2.0
+ */
+add_action( 'bs5pc/page/fullwidth', 'bs5pc_add_page_fullwidth' );
+
+function bs5pc_add_page_fullwidth() {
+    get_template_part( 'template-parts/page-fullwidth' );
+}
+
+/**
  * Loads footer credits template part.
  *
  * @since 1.0.0
