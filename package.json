@@ -4,8 +4,10 @@
   "description": "BS5Press Classic",
   "main": "style.css",
   "scripts": {
+    "clean": "rimraf bs5press-classic bs5press-classic.zip",
     "make-pot": "wp i18n make-pot . languages/bs5press-classic.pot --exclude=node_modules,vendor --ignore-domain=default --headers='{\"Report-Msgid-Bugs-To\":\"https://github.com/wpizard/bs5press-classic\",\"Last-Translator\":\"WPizard <wpizard@gmail.com>\",\"Language-Team\":\"WPizard <wpizard@gmail.com>\"}'",
-    "zip": "bestzip bs5press-classic.zip . -x '**/.git/**' '**/.DS_Store' 'node_modules/**' 'vendor/**' 'package.json' 'package-lock.json'",
+    "prepare-zip": "copyfiles \"**/*\" bs5press-classic -e \"node_modules/**\" -e \".git/** -e vendor/**\" -e \"package.json\" -e \"package-lock.json\"",
+    "zip": "npm run clean && npm run prepare-zip && cd bs5press-classic && bestzip ../bs5press-classic.zip *",
     "build": "npm run make-pot && npm run zip"
   },
   "keywords": [
@@ -17,6 +19,8 @@
   "author": "WPizard",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
-    "bestzip": "^2.2.1"
+    "bestzip": "^2.2.1",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^6.0.1"
   }
 }
