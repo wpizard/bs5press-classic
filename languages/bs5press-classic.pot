@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-08-11T05:53:44+00:00\n"
+"POT-Creation-Date: 2025-09-15T16:29:40+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
@@ -33,64 +33,81 @@ msgstr ""
 msgid "https://wpizard.com"
 msgstr ""
 
+#: bs5press-classic/comments.php:28
 #: comments.php:28
 msgid "Comment Navigation"
 msgstr ""
 
+#: bs5press-classic/comments.php:30
 #: comments.php:30
 msgid "← Older Comments"
 msgstr ""
 
+#: bs5press-classic/comments.php:31
 #: comments.php:31
 msgid "Newer Comments →"
 msgstr ""
 
+#: bs5press-classic/comments.php:37
 #: comments.php:37
 msgid "No comments yet. Be the first!"
 msgstr ""
 
+#: bs5press-classic/comments.php:48
 #: comments.php:48
 msgid "Comment"
 msgstr ""
 
+#: bs5press-classic/comments.php:54
 #: comments.php:54
 msgid "Name"
 msgstr ""
 
+#: bs5press-classic/comments.php:59
 #: comments.php:59
 msgid "Email"
 msgstr ""
 
+#: bs5press-classic/comments.php:64
 #: comments.php:64
 msgid "Website"
 msgstr ""
 
+#: bs5press-classic/includes/theme-settings.php:62
+#: bs5press-classic/includes/theme-settings.php:63
+#: bs5press-classic/includes/theme-settings.php:173
 #: includes/theme-settings.php:62
 #: includes/theme-settings.php:63
 #: includes/theme-settings.php:173
 msgid "Theme Settings"
 msgstr ""
 
+#: bs5press-classic/includes/theme-settings.php:85
 #: includes/theme-settings.php:85
 msgid "Assets"
 msgstr ""
 
+#: bs5press-classic/includes/theme-settings.php:93
 #: includes/theme-settings.php:93
 msgid "Bootstrap CSS and JavaScript"
 msgstr ""
 
+#: bs5press-classic/includes/theme-settings.php:125
 #: includes/theme-settings.php:125
 msgid "Adjust the theme assets settings."
 msgstr ""
 
+#: bs5press-classic/includes/theme-settings.php:139
 #: includes/theme-settings.php:139
 msgid "Load from CDN"
 msgstr ""
 
+#: bs5press-classic/includes/theme-settings.php:140
 #: includes/theme-settings.php:140
 msgid "Load from Theme (single bundle)"
 msgstr ""
 
+#: bs5press-classic/index.php:44
 #: index.php:44
 msgid "No posts found."
 msgstr ""
@@ -103,31 +120,38 @@ msgstr ""
 msgid "Full Width"
 msgstr ""
 
+#: bs5press-classic/page.php:20
 #: page.php:20
 msgid "Sorry, this page doesn’t exist."
 msgstr ""
 
+#: bs5press-classic/template-parts/footer-credits.php:11
 #: template-parts/footer-credits.php:11
 msgid "All rights reserved."
 msgstr ""
 
+#: bs5press-classic/template-parts/header-navbar.php:20
 #: template-parts/header-navbar.php:20
 msgid "Toggle navigation"
 msgstr ""
 
+#: bs5press-classic/template-parts/page-single.php:19
 #: template-parts/page-single.php:19
 #, php-format
 msgid "Published on %1$s by %2$s"
 msgstr ""
 
+#: bs5press-classic/template-parts/page-single.php:39
 #: template-parts/page-single.php:39
 msgid "Categories:"
 msgstr ""
 
+#: bs5press-classic/template-parts/page-single.php:44
 #: template-parts/page-single.php:44
 msgid "Tags:"
 msgstr ""
 
+#: bs5press-classic/template-parts/page-single.php:58
 #: template-parts/page-single.php:58
 msgid "Sorry, no post found."
 msgstr ""
